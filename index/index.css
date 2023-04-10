@@ -138,11 +138,27 @@ main > nav > h2{
     align-items: center;
 }
 
-img{
+/*img{
     width: 30%;
     height: 30%;
     max-width: 30%;
     max-height: 30%;
     border-radius: 50px;
+    border: 10px solid #000;
+} */
+
+.navProper > a{
+    width: 30%;
+    height: 30%;
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    
     border: 10px solid #000;
 }
