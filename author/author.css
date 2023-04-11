@@ -150,11 +150,31 @@ section{
     align-items: center;
 }
 
+#social{
+    flex-direction: row;
+}
+
 img{
+    border: 8px solid #000;
+    border-radius: 33px
+}
+
+p{
+    font-size: larger;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.panorama{
+    
+    width: 100%;
+    height: auto;
+}
+
+.soci{
     width: 30%;
-    height: 30%;
-    max-width: 30%;
-    max-height: 30%;
-    border-radius: 50px;
-    border: 7px solid #000;
+    height: auto;
 }

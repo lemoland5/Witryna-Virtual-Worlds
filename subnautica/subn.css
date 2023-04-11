@@ -189,3 +189,10 @@ table{
     border: 2px solid #030c2f;
 }
 
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: center;
+}
