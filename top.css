@@ -9,7 +9,12 @@
     justify-content:space-between;
 }
 
+
 .topBar > a, .baseNav > a{
     text-decoration: none;
     color: inherit;
+}
+.topBar{
+    position: sticky;
+    top: 0;
 }

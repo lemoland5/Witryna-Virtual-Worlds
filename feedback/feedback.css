@@ -90,7 +90,6 @@ html, body{
 }
 
 main{
-    width: 93%;
     background-color: #002D57;
     display: flex;
     padding-top: 4%;
@@ -183,7 +182,7 @@ input::placeholder {
 
 .button{
     background-color: #001F31;
-    width: 40%;
+    width: 47%;
     text-align: center;
     border-radius: 35px;
     border: none;
@@ -200,7 +199,7 @@ input::placeholder {
 }
 
 .sectionSelect{
-    width: fit-content;
+    width: 47%;
 }
 
 .inputWrap{
