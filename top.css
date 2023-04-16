@@ -13,7 +13,14 @@
 .topBar > a, .baseNav > a{
     text-decoration: none;
     color: inherit;
+
+    transition: .2s transform;
 }
+
+.topBar > a:hover, .baseNav > a:hover{
+    transform: scale(1.1);
+}
+
 .topBar{
     position: sticky;
     top: 0;

@@ -115,6 +115,7 @@ main > article{
     color: #fff;
     padding-bottom: 20px;
     padding-top: 20px;
+    border: 7px #0a001b solid;
 }
 
 main > article > h2{
@@ -156,8 +157,13 @@ textarea{
     padding: 3px;
 }
 
+input{
+    
+    border-radius: 16px;
+}
+
 #reason1{
-    height: 250px;
+    height: 100px;
 }
 
 textarea:focus{
@@ -211,4 +217,32 @@ input[type=text]{
 
 h3{
     width: 100%;
+}
+
+.mainSec{
+    width: 100%;
+}
+
+input[type=number] {
+    appearance: textfield;
+    text-align: center;
+}
+
+
+main {
+	background: linear-gradient(-45deg, #52d4ee, #49e2c6, #2347d5, #8388a4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
