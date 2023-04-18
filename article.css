@@ -101,6 +101,7 @@ main{
     flex-wrap: wrap;
     background-color: #002D57;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 main {

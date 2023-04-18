@@ -58,8 +58,6 @@ html, body{
 
     text-align: center;
     user-select: none;
-
-    
 }
 
 .mainHeader{
@@ -98,6 +96,8 @@ main{
     flex-wrap: wrap;
     background-color: #002D57;
     align-items: center;
+
+    padding-bottom: 20px;
 }
 
 main > article{
@@ -115,10 +115,48 @@ main > article{
     padding: 20px;
 }
 
+dialog{
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    top: 3%;
+    padding: 0;
+    border: none;
+    z-index: 2;
+
+    border: 10px #000308 solid;
+
+    height: fit-content;
+    width: 75%;
+    border-radius: 40px;
+}
+
+dialog > img{
+    display: block;
+    border-radius: 40px;
+
+    border: 3px #fff solid;
+
+    border-radius: 0;
+
+    object-fit: fill;
+
+    border: none;
+    margin: 0;
+}
+
 main > article > h2{
     font-size: 4rem;
     margin:0;
     margin-bottom: 20px;
+}
+
+dialog::backdrop{
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: .65;
 }
 
 .navProper{
@@ -155,19 +193,37 @@ section>p{
 }
 
 img{
+    margin: 0;
+    padding: 0;
+
     width: 100%;
     height: min-content;
     object-fit: contain;
     border-radius: 15px;
     border: 5px #2c2c2c solid;
+}
 
+img.gallimg{
     transition: .2s transform;
 }
 
-img:hover{
+img.gallimg:hover{
     transform: scale(1.03);
+    cursor: pointer;
 }
 
+.fade-in {
+    transition: opacity 1s;
+}
+
+@keyframes opactiy{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 main {
 	background: linear-gradient(-45deg, #52d4ee, #49e2c6, #2347d5, #8388a4);
@@ -185,4 +241,25 @@ main {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+#closeButton{
+    position: absolute;
+    border: none;
+    align-self: flex;
+    left: 20px;
+    top: 20px;
+    background: none;
+
+    outline: none;
+}
+
+#closeButton:hover{
+    cursor: pointer;
+}
+
+
+#closeButton > img{
+    width: 25px;
+    height: auto;
 }

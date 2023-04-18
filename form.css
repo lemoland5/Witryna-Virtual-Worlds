@@ -101,6 +101,7 @@ main{
     height: fit-content;
     row-gap: 20px;
     flex-grow: 1;
+    padding-bottom: 20px;
 }
 
 main {
@@ -182,6 +183,7 @@ textarea{
     background-color: #f8f8f8;
     resize: none;
     padding: 3px;
+    padding:8px
 }
 
 #reason1{
@@ -231,4 +233,24 @@ input::placeholder {
 
 .inp{
     color: #000;
+}
+
+input[type=number]{
+    border-radius: 20px;
+    text-align: center;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+input[inputmode=numeric]::placeholder{
+    color: #000;
+}
+
+input[inputmode=numeric]{
+    border-radius: 20px;
 }
